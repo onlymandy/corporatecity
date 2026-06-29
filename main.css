@@ -1,0 +1,562 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: 'arial', sans-serif;
+}
+
+:root{
+    --nice-gradient: transparent ;
+    --nice:pink;
+    --white-color:white;
+    --black-color: black;
+    --orange-color:rgb(255, 125.49212598425197, 37.145669291338585);
+}
+.top-banner {
+    width: 100%;
+    background-color: rgb(135, 57, 133); /* Matches your plum purple shade */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Centered layout for content */
+.top-banner-content {
+    width: 80%; /* Aligns content with the rest of your page width */
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;  /*Puts space between email and phone */
+    color: #ffffff;
+    font-size: 14px;
+}
+.header-logo{
+   
+}
+
+
+
+/* Aligns the Logo on the left and the Link Holder on the right */
+.nav-desktop {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+/* Forces the UL list and the Call Now button to sit side-by-side */
+.link-holder {
+    display: flex;
+    align-items:center;
+    gap: 25px; /* Space between the last link and the button */
+}
+
+/* Forces the individual list items to sit side-by-side */
+.link-holder ul {
+    display: flex;
+    list-style: none; /* Removes the blue bullet points */
+    margin: 0;
+    padding: 0;
+    gap: 30px; /* Space between each navigation link */
+    
+}
+
+/* Ensures the text links don't inherit default underline styling */
+.header-links {
+    text-decoration: none;
+    color: #333333; /* Dark gray text color */
+    font-weight: 500;
+}
+
+/* Split contact info left and social icons right */
+
+
+.contact-info, .social-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact-info a, .social-icons a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Set size for your main corporate logo image */
+.brand-logo-img {
+    height: 70px; /* Adjust height based on your image file */
+    width: auto;
+}
+
+
+
+
+.hero-banner {
+    width: 98.7% !important;
+    background-color: rgb(156, 88, 155) !important; 
+    
+    /* This completely locks the purple shape to a short height */
+    height: 400px !important;             
+    padding: 0 !important;                
+    position: relative !important;
+    
+    /* Cuts the purple background into the curved shape */
+    border-radius: 0 0 120px 120px !important; 
+     
+}
+
+.hero-container {
+    width: 92% !important;
+    max-width: 1400px !important;
+    background-color: #7d1515 !important;  
+    padding: 50px !important;
+    border-radius: 70px !important;        
+    /* image */
+     background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.55)), url("images/image2.png") !important;
+;
+
+
+
+    /* This explicitly sets how long and deep you want the red box to be */
+    height: 700px;
+    min-height: 700px !important;          
+
+    /* This negative margin pulls the red box UP into the purple space */
+    margin: -370px auto 0 auto !important;
+    position: relative !important;
+    z-index: 5 !important;                 
+
+    /* Centers text and makes it white */
+    color: #ffffff !important;
+    text-align: center !important;
+
+
+
+
+
+
+
+
+
+}
+
+.hero-image{}
+
+.btn-main {
+    background-color: rgb(135, 57, 133); /* Matches your purple shade */
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    /*border-radius: 15px; /* Optional: adds rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+h1 {
+    color: black; /* White text for contrast */
+    font-weight: 550; /* Lighter font weight */
+    
+}
+.secondsection-rightdiv p {
+    color: rgb(76, 73, 73);
+}
+
+
+
+
+
+
+
+
+.secondsection{
+    /* border: 3px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 0;
+    flex-wrap:wrap ;
+    max-width: 1500px;
+    margin: 0 auto;
+    
+}
+.secondsection-rightdiv{
+     /*border: 3px solid black; */
+    width: 550px;
+    height: 460px;
+    background: var(--nice-gradient);
+    padding: 40px 25px;
+    line-height: 24px;
+}
+.secondsection-rightdiv p{
+    margin: 10px 0;
+}
+
+.secondsection-leftdiv{
+     /*border: 3px solid black; */
+    height: 370px;
+    width: 550px;
+
+
+       background-image: url("images/image3.png"); 
+    background-size: cover;
+    background-position: center;
+
+     box-shadow: 6px 6px 22px -6px rgba(0,0,0.75);
+
+    
+}
+
+.special{
+    color: transparent;
+}
+
+.btn-second, .btn-second a{
+    background: transparent;
+ border: none; 
+    color: var(--black-color);
+    font-size: 15px;
+
+    text-decoration: none;
+
+
+    
+}
+.btn-second:hover, .btn-second:hover a {
+    background: var(--orange-color);
+    color: var(--white-color);
+}
+
+.btn-second{
+    border: black 1px solid;
+    display: inline-block;          /* Allows the element to accept custom sizing/padding */
+    padding: 16px 33px;
+}
+
+.btn-started, .btn-started a{
+    background: #873985;
+ border: none; 
+    color: white;
+    font-size: 15px;
+
+    text-decoration: none;
+
+    border-radius: 14px 14px 14px 14px !important; 
+
+}
+.btn-started{
+    border: black 1px solid;
+    display: inline-block;          /* Allows the element to accept custom sizing/padding */
+    padding: 17px 44px;
+}
+
+.hero-text{
+   /*  border: 3px solid white; */
+    width: 550px;
+    height: 500px;
+    /*background: black;*/
+    padding: 250px 60px;
+    line-height: 24px;
+    word-spacing: normal;
+    
+
+    
+}
+.hero-text h2{
+    color: white; /* White text for contrast */
+    font-size: 40px; 
+    font-weight: 200;
+    word-spacing: 10px;
+    line-height: normal;
+   
+}
+
+.hero-text, .btn-started{
+    margin-top: 10px; /* Adds space above the button */
+}
+    
+
+
+
+
+
+.thirdsection{
+    display: flex;
+    justify-content: center;
+   /*  border: 2px solid black; */
+    padding: 45px 0;
+    background: url(./images/image7.png);
+    background-size: cover;
+    width: 98.7%;
+    
+
+}
+.thirdsection-leftdiv,.thirdsection-rightdiv{
+    width: 550px;
+    height: 420px;
+}
+
+.thirdsection-leftdiv{
+    /* border: 2px solid red; */
+    padding: 30px 30px;
+     background-image: linear-gradient(rgba(238, 244, 244, 0.896), rgba(238, 244, 244, 0.896));
+    
+    
+}
+.thirdsection-leftdiv p{
+    margin: 10px ;
+    word-spacing: 5px;
+    color:rgb(34, 34, 34);
+    
+}
+.thirdsection-leftdiv h2{
+    font-size: 50px;
+    font-weight: 10;
+   
+}
+.thirdsection-rightdiv{
+    /* border: 2px solid blue; */
+}
+
+.btn-learn, .btn-learn a{
+    background: rgb(135, 57, 133);
+ border: none; 
+    color: white;
+    font-size: 15px;
+
+    text-decoration: none;
+
+    
+
+}
+.btn-learn{
+   /* border: black 1px solid;*/
+    display: inline-block;          /* Allows the element to accept custom sizing/padding */
+    padding: 13px 44px;
+    margin: 20px;
+}
+
+
+
+
+
+.fourthsection{
+     /*border: 3px solid blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 50px  0;
+    flex-wrap:wrap ;
+    max-width: 1500px;
+    margin: 0 auto;
+    background-image: linear-gradient(#ffffff, #e2ecf2);
+}
+.fourthsection-leftdiv{
+     /*border: 3px solid black; */
+    width: 550px;
+    height: 350px;
+    background: var(--nice-gradient);
+    padding: 40px 25px;
+    line-height: 24px;
+}
+.fourthsection-leftdiv p{
+    margin: 10px 0;
+}
+
+.fourthsection-rightdiv{
+     /*border: 3px solid black; */
+    height: 350px;
+    width: 550px;
+
+
+       background-image: url("images/image4.png"); 
+    background-size: cover;
+    background-position: center;
+
+    
+
+    
+}
+
+
+.btn-surplus, .btn-surplus a{
+    background: #873985;
+ border: none; 
+    color: white;
+    font-size: 15px;
+
+    text-decoration: none;
+
+    border-radius: 14px 14px 14px 14px !important; 
+
+}
+.btn-surplus{
+    /*border: black 1px solid;*/
+    display: inline-block;          /* Allows the element to accept custom sizing/padding */
+    padding: 10px 22px;
+}
+
+
+
+
+
+
+
+
+
+.fifthsection{
+    display: flex;
+    justify-content: center;
+   /*  border: 2px solid black; */
+    padding: 45px 0;
+    background: black;
+    background-size: cover;
+    width: 98.7%;
+    border-radius: 70px 70px 0 0;
+    margin-top: 125px;
+    
+
+}
+
+
+
+.fifthsection-firstdiv{
+    /* border: 2px solid red; */
+    padding: 25px 80px;
+     /*background-image: linear-gradient(white, white);*/
+     
+    
+    
+}
+
+
+
+
+.fifthsection-leftdiv,.fifthsection-rightdiv{
+    width: 500px;
+    height: 310px;
+}
+
+.fifthsection-leftdiv{
+    /* border: 2px solid red; */
+    padding: 25px 80px;
+     /*background-image: linear-gradient(white, white);*/
+    
+    
+}
+.fifthsection-leftdiv p{
+    margin: 10px ;
+    word-spacing: 5px;
+    color:#ffffff;
+    
+}
+
+.fifthsection-leftdiv h1{
+    color: white;
+}
+
+
+
+
+
+.fifthsection-middlediv{
+    /* border: 2px solid red; */
+    padding: 25px 80px;
+     /*background-image: linear-gradient(white, white);*/
+    
+    
+}
+.fifthsection-middlediv li{
+    margin: 10px ;
+    word-spacing: 10px;
+    color:#ffffff;
+    
+
+}
+
+.fifthsection-middlediv h1{
+    color: white;
+}
+
+
+
+
+
+
+
+.fifthsection-rightdiv{
+   /*  border: 2px solid red; */
+    padding: 25px 80px;
+     /*background-image: linear-gradient(white, white);*/
+    
+    
+}
+.fifthsection-rightdiv p{
+    margin: 10px ;
+    word-spacing: 5px;
+    color:#ffffff;
+    
+}
+
+.fifthsection-rightdiv h1{
+    color: white;
+}
+
+
+
+
+.bottom-banner {
+    width: 100%;
+    background-color: #7e287e; /* Matches your plum purple shade */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Centered layout for content */
+.bottom-banner-content {
+    width: 80%; /* Aligns content with the rest of your page width */
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;  /*Puts space between email and phone */
+    color: #ffffff;
+    font-size: 10px;
+}
+
+
+
+
+
+.btn-foot, .btn-foot a{
+    background: transparent;
+ border: none; 
+    color: white;
+    font-size: 15px;
+
+    text-decoration: none;
+
+
+    
+}
+.btn-foot:hover, .btn-foot:hover a {
+    background: transparent;
+    color: black;
+}
+
+.btn-foot a{
+    font-size: 16px;
+}
+
+.bottom-banner-content p{
+    font-size: 16px;
+    color: white;
+}
