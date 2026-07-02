@@ -1,0 +1,558 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-family: 'arial', sans-serif;
+}
+
+:root{
+    --nice-gradient: transparent ;
+    --nice:pink;
+    --white-color:white;
+    --black-color: black;
+    --orange-color:rgb(255, 125.49212598425197, 37.145669291338585);
+}
+.top-banner {
+    width: 100%;
+    background-color: rgb(135, 57, 133); /* Matches your plum purple shade */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Centered layout for content */
+.top-banner-content {
+    width: 80%; /* Aligns content with the rest of your page width */
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;  /*Puts space between email and phone */
+    color: #ffffff;
+    font-size: 14px;
+}
+.header-logo{
+   
+}
+
+
+
+/* Aligns the Logo on the left and the Link Holder on the right */
+.nav-desktop {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+/* Forces the UL list and the Call Now button to sit side-by-side */
+.link-holder {
+    display: flex;
+    align-items:center;
+    gap: 25px; /* Space between the last link and the button */
+}
+
+/* Forces the individual list items to sit side-by-side */
+.link-holder ul {
+    display: flex;
+    list-style: none; /* Removes the blue bullet points */
+    margin: 0;
+    padding: 0;
+    gap: 30px; /* Space between each navigation link */
+    
+
+   
+}
+.link-holder:hover, .link-holder:hover ul{
+    background: transparent;
+    color: rgb(193, 19, 19);
+}
+
+/* Ensures the text links don't inherit default underline styling */
+.header-links {
+    text-decoration: none;
+    color: #333333; /* Dark gray text color */
+    font-weight: 500;
+}
+
+/* Split contact info left and social icons right */
+
+
+.contact-info, .social-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.contact-info a, .social-icons a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Set size for your main corporate logo image */
+.brand-logo-img {
+    height: 100px; 
+    width: 150px;
+    margin-right: 100px;
+}
+
+.btn-main {
+    background-color: rgb(135, 57, 133); /* Matches your purple shade */
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    /*border-radius: 15px; /* Optional: adds rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Center and scale the welcome text */
+.welcome-container {
+    text-align: center;
+    max-width: 1000px;
+    margin: 60px auto 40px auto;
+    padding: 0 20px;
+    font-family: sans-serif;
+    height: 290px;
+}
+
+.welcome-container h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #222222;
+    line-height: 1;
+    margin-bottom: 30px;
+    font-weight: 50;
+}
+
+.welcome-container p {
+    font-size: 16px;
+    color: #555555;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+/* Style the purple "CONTACT FOR ASSISTANCE" button */
+.contact-btn {
+    background-color: #873985;
+    color: white;
+    border: none;
+    padding: 14px 32px;
+    font-size: 15px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 60px; 
+}
+
+
+
+
+
+
+
+
+
+.psection {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 80px 40px;
+    background-color: #873985 !important; /* Forces the color to show */
+    width: 100%;
+    min-height: 500px;
+    box-sizing: border-box;
+
+    /* --- THE CURVED OVERLAP EFFECT --- */
+    margin-top: -40px !important;    /* Pulls it slightly up into the white space */
+    position: relative !important;   /* Enables layering */
+    z-index: 10 !important;          /* Keeps it cleanly visible */
+   
+}
+
+
+.psection-leftdiv {
+    width: 100%;
+    max-width: 600px;
+    color: white;
+}
+
+
+.psection-rightdiv {
+    background-image: url("images/main5.png");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-width: 500px;
+    height: 380px;
+    border-radius: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 1. The Main Purple Section Layout Container */
+
+
+
+
+/* 3. The Large Title Heading spacing */
+.psection-leftdiv h1 {
+    font-size: 38px;
+    font-weight: 100;
+   margin-top: -140px;
+    margin-bottom: 15px;         /* Pushes the paragraph copy cleanly down */
+}
+
+/* 4. The Explanatory Text Paragraphs */
+.psection-leftdiv p {
+    font-size: 16px;
+    line-height: 1.7;            /* Increases space between lines to prevent eye strain */
+    margin-bottom: 25px;         /* Beautifully separates paragraphs and list items */
+}
+
+/* 5. The Bulleted List Spacing */
+
+
+.psection-leftdiv li {
+    font-size: 16px;
+    line-height: .6;
+    margin-bottom: 12px;         /* CRUCIAL: Pushes list bullets away from each other vertically */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* 1. Main Black Layout Container */
+.black-section {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;     
+    gap: 60px;                   
+    padding: 100px 40px;        
+    background-color: #000000;   
+    width: 100%;
+    box-sizing: border-box;
+    height: 730px;                
+}
+
+/* 2. Left Column Layout (Image) */
+.black-section-left {
+    flex: 1;
+    max-width: 520px;           
+}
+
+.meeting-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 4px;         
+}
+
+/* 3. Right Column Layout (Text and Card) */
+.black-section-right {
+    flex: 1.2;                   
+    max-width: 600px;
+    /*border: 1px solid #ffffff;  */      
+    color: #ffffff;            
+}
+
+.black-section-right h2 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.intro-text {
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 20px;         /* Spacing before the inner purple card starts */
+    color: #e0e0e0;              /* Slightly softer off-white for body content readability */
+}
+
+/* 4. The Accent Nested Purple Block Layout */
+.nested-purple-card {
+    background-color: #873985;   /* Your brand's plum purple color */
+    padding: 40px;               /* Elegant internal margin framing spacing */
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+.nested-purple-card h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.nested-purple-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* Removes extra margin on the final paragraph inside the purple card block */
+.nested-purple-card p:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+/* 1. Main Orange Layout Container */
+.orange-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 40px;          
+    background-color: #ff6600;   
+    width: 100%;
+    box-sizing: border-box;
+    height: 380px;                 
+}
+
+/* 2. Content Alignment Wrapper */
+.orange-banner-content {
+    width: 100%;
+    max-width: 1100px;           
+    color: #ffffff;             
+    text-align: left;
+}
+
+/* 3. The Banner Headline */
+.orange-banner-content h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 25px;        
+}
+
+
+.orange-banner-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 35px;         
+    color: #ffffff;
+}
+
+
+.orange-contact-btn {
+    background-color: white;
+    color: #ff6600;
+   /* border: 2px solid #ffffff;   */
+    padding: 12px 28px;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fifthsection{
+    display: flex;
+    justify-content: center;
+   /*  border: 2px solid black; */
+    padding: 45px 0;
+    background: black;
+    background-size: cover;
+    width: 98.7%;
+    border-radius: 70px 70px 0 0;
+    margin-top: -45px;
+
+}
+
+
+
+.fifthsection-firstdiv{
+    /* border: 2px solid red; */
+    padding: 25px 80px;
+     /*background-image: linear-gradient(white, white);*/
+     
+    
+    
+}
+
+
+
+
+.fifthsection-leftdiv,.fifthsection-rightdiv{
+    width: 500px;
+    height: 310px;
+}
+
+.fifthsection-leftdiv{
+    /* border: 2px solid red; */
+    padding: 25px 80px;
+     /*background-image: linear-gradient(white, white);*/
+    
+    
+}
+.fifthsection-leftdiv p{
+    margin: 10px ;
+    word-spacing: 5px;
+    color:#ffffff;
+    
+}
+
+.fifthsection-leftdiv h1{
+    color: white;
+}
+
+
+
+
+
+.fifthsection-middlediv{
+    /* border: 2px solid red; */
+    padding: 25px 80px;
+     /*background-image: linear-gradient(white, white);*/
+    
+    
+}
+.fifthsection-middlediv li{
+    margin: 10px ;
+    word-spacing: 10px;
+    color:#ffffff;
+    
+
+}
+
+.fifthsection-middlediv h1{
+    color: white;
+}
+
+
+
+
+
+
+
+.fifthsection-rightdiv{
+   /*  border: 2px solid red; */
+    padding: 25px 80px;
+     /*background-image: linear-gradient(white, white);*/
+    
+    
+}
+.fifthsection-rightdiv p{
+    margin: 10px ;
+    word-spacing: 5px;
+    color:#ffffff;
+    
+}
+
+.fifthsection-rightdiv h1{
+    color: white;
+}
+
+
+
+
+.bottom-banner {
+    width: 100%;
+    background-color: #7e287e; /* Matches your plum purple shade */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Centered layout for content */
+.bottom-banner-content {
+    width: 80%; /* Aligns content with the rest of your page width */
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;  /*Puts space between email and phone */
+    color: #ffffff;
+    font-size: 10px;
+}
+
+
+
+
+
+.btn-foot, .btn-foot a{
+    background: transparent;
+ border: none; 
+    color: white;
+    font-size: 15px;
+
+    text-decoration: none;
+
+
+    
+}
+.btn-foot:hover, .btn-foot:hover a {
+    background: transparent;
+    color: black;
+}
+
+.btn-foot a{
+    font-size: 16px;
+}
+
+.bottom-banner-content p{
+    font-size: 16px;
+    color: white;
+}

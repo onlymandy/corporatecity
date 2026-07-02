@@ -96,15 +96,26 @@ body {
     margin-right: 100px;
 }
 
+.special{
+    color: transparent;
+}
 
-
-
+.btn-main {
+    background-color: rgb(135, 57, 133); /* Matches your purple shade */
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    /*border-radius: 15px; /* Optional: adds rounded corners */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
 .hero-banner {
     width: 98.7% !important;
-    background-color: rgb(156, 88, 155) !important; 
+    background-color: rgb(127, 40, 127) !important; 
     
     /* This completely locks the purple shape to a short height */
-    height: 400px !important;             
+    height: 350px !important;             
     padding: 0 !important;                
     position: relative !important;
     
@@ -120,17 +131,15 @@ body {
     padding: 50px !important;
     border-radius: 70px !important;        
     /* image */
-     background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.55)), url("images/image2.png") !important;
-;
-
+     background-image: linear-gradient(rgba(53, 82, 43, 0.7), rgba(53, 82, 43, 0.7)), url("images/main1.png") !important;
 
 
     /* This explicitly sets how long and deep you want the red box to be */
-    height: 700px;
-    min-height: 700px !important;          
+    height: 425px;
+    min-height: 425px !important;          
 
     /* This negative margin pulls the red box UP into the purple space */
-    margin: -370px auto 0 auto !important;
+    margin: -318px auto 0 auto !important;
     position: relative !important;
     z-index: 5 !important;                 
 
@@ -138,154 +147,21 @@ body {
     color: #ffffff !important;
     text-align: center !important;
 
-
-
-
-
-
-
-
-
 }
 
-.hero-image{}
 
-.btn-main {
-    background-color: rgb(135, 57, 133); /* Matches your purple shade */
-    color: rgb(0, 0, 0);
-    border: none;
-    padding: 12px 25px;
-    font-size: 16px;
-    cursor: pointer;
-    /*border-radius: 15px; /* Optional: adds rounded corners */
-    transition: background-color 0.3s ease; /* Smooth hover effect */
+
+.hero-text h1{
+    font-size: 50px;
+    font-weight: 20;
 }
-h1 {
-    color: black; /* White text for contrast */
-    font-weight: 550; /* Lighter font weight */
+.hero-text {
+   /* border: 3px solid white; */
     
-}
-.secondsection-rightdiv p {
-    color: rgb(76, 73, 73);
-}
-
-
-
-
-
-
-
-
-.secondsection{
-    /* border: 3px solid blue; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    padding: 50px 0;
-    flex-wrap:wrap ;
-    max-width: 1500px;
-    margin: 0 auto;
-    
-}
-.secondsection-rightdiv{
-     /*border: 3px solid black; */
-    width: 550px;
-    height: 460px;
-    background: var(--nice-gradient);
-    padding: 40px 25px;
-    line-height: 24px;
-}
-.secondsection-rightdiv p{
-    margin: 10px 0;
-}
-
-.secondsection-leftdiv{
-     /*border: 3px solid black; */
-    height: 370px;
-    width: 550px;
-
-
-       background-image: url("images/image3.png"); 
-    background-size: cover;
-    background-position: center;
-
-     box-shadow: 6px 6px 22px -6px rgba(0,0,0.75);
-
-    
-}
-
-.special{
-    color: transparent;
-}
-
-.btn-second, .btn-second a{
-    background: transparent;
- border: none; 
-    color: var(--black-color);
-    font-size: 15px;
-
-    text-decoration: none;
-
-
-    
-}
-.btn-second:hover, .btn-second:hover a {
-    background: var(--orange-color);
-    color: var(--white-color);
-}
-
-.btn-second{
-    border: black 1px solid;
-    display: inline-block;          /* Allows the element to accept custom sizing/padding */
-    padding: 16px 33px;
-}
-
-.btn-started, .btn-started a{
-    background: #873985;
- border: none; 
-    color: white;
-    font-size: 15px;
-
-    text-decoration: none;
-
-    border-radius: 14px 14px 14px 14px !important; 
-
-}
-.btn-started{
-    border: black 1px solid;
-    display: inline-block;          /* Allows the element to accept custom sizing/padding */
-    padding: 17px 44px;
-}
-
-.hero-text{
-   /*  border: 3px solid white; */
-    width: 550px;
-    height: 500px;
     /*background: black;*/
-    padding: 250px 60px;
-    line-height: 24px;
-    word-spacing: normal;
-    
-
+    padding: 150px 0px 0px 18px;
     
 }
-.hero-text h2{
-    color: white; /* White text for contrast */
-    font-size: 40px; 
-    font-weight: 200;
-    word-spacing: 10px;
-    line-height: normal;
-   
-}
-
-.hero-text, .btn-started{
-    margin-top: 10px; /* Adds space above the button */
-}
-    
-
-
-
 
 
 .thirdsection{
@@ -293,56 +169,77 @@ h1 {
     justify-content: center;
    /*  border: 2px solid black; */
     padding: 45px 0;
-    background: url(./images/image7.png);
     background-size: cover;
     width: 98.7%;
-    
-
+    margin-top: 50px;
+    height: 675px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.467), rgba(0, 0, 0, 0.619)), url("images/about2.png") !important;
+    margin-bottom: 10px;
+    background-position: center 50%;
 }
-.thirdsection-leftdiv,.thirdsection-rightdiv{
+/*.thirdsection-leftdiv,.thirdsection-rightdiv{
     width: 550px;
     height: 420px;
-}
+}*/
 
-.thirdsection-leftdiv{
-    /* border: 2px solid red; */
-    padding: 30px 30px;
-     background-image: linear-gradient(rgba(238, 244, 244, 0.896), rgba(238, 244, 244, 0.896));
-    
-    
-}
-.thirdsection-leftdiv p{
-    margin: 10px ;
-    word-spacing: 5px;
-    color:rgb(34, 34, 34);
-    
-}
-.thirdsection-leftdiv h2{
-    font-size: 50px;
-    font-weight: 10;
-   
-}
-.thirdsection-rightdiv{
-    /* border: 2px solid blue; */
-}
 
-.btn-learn, .btn-learn a{
-    background: rgb(135, 57, 133);
- border: none; 
+
+.thirdsection-leftdiv h3{
     color: white;
-    font-size: 15px;
-
-    text-decoration: none;
-
-    
-
+    font-size: 34px;
+    font-weight: 1;
+     padding: 150px 0px 0px 18px;
 }
-.btn-learn{
-   /* border: black 1px solid;*/
-    display: inline-block;          /* Allows the element to accept custom sizing/padding */
-    padding: 13px 44px;
-    margin: 20px;
+.thirdsection-leftdiv{
+   /* border: 2px solid blue;*/
+   width: 670px;
 }
+
+
+.thirdsection-rightdiv {
+    background-color: white;
+    width: 600px;
+    max-width: 600px;           /* Sets a clean, standard width */
+    height: auto;               /* REMOVED: Changed from 550px to auto so the text editor fits perfectly without spilling out */
+    padding: 40px;              /* Gives a generous, elegant breathing room inside the box */      
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;     /* Stacks your inputs beautifully from top to bottom */
+}
+
+/* 2. Styling the Main Form Title */
+.thirdsection-rightdiv h1 {
+    font-size: 24px;
+    font-weight: 550;
+    color: #333333;
+    margin: 0 0 20px 0;        
+    border-bottom: 1px solid #e0e0e0; /* Thin, soft grey underline divider */
+    padding-bottom: 15px;
+}
+
+/* 3. Global Form Input Fields & Labels 
+.thirdsection-rightdiv label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #444444;
+    margin-bottom: 6px;
+    margin-top: 12px;           /* Spaces out input sections neatly 
+    display: block;
+}*/
+
+.thirdsection-rightdiv input[type="text"],
+.thirdsection-rightdiv input[type="tel"],
+.thirdsection-rightdiv input[type="email"] {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 14px;
+    border: 1px solid #cccccc;  /* Soft border border profile */
+    border-radius: 4px;
+    box-sizing: border-box;
+    outline: none;
+    color: #333;
+}
+
 
 
 
@@ -358,7 +255,7 @@ h1 {
     flex-wrap:wrap ;
     max-width: 1500px;
     margin: 0 auto;
-    background-image: linear-gradient(#ffffff, #e2ecf2);
+    margin-bottom: 100px;
 }
 .fourthsection-leftdiv{
      /*border: 3px solid black; */
@@ -367,6 +264,7 @@ h1 {
     background: var(--nice-gradient);
     padding: 40px 25px;
     line-height: 24px;
+    
 }
 .fourthsection-leftdiv p{
     margin: 10px 0;
@@ -378,31 +276,110 @@ h1 {
     width: 550px;
 
 
-       background-image: url("images/image4.png"); 
+       background-image: url("images/main2.png"); 
     background-size: cover;
     background-position: center;
     
 }
 
+.fsection{
+    display: flex;
+    justify-content: center;
+   /*  border: 2px solid black; */
+    padding: 45px 0;
+    background: #353131;
+    background-size: cover;
+    width: 98.7%;
+    
 
-.btn-surplus, .btn-surplus a{
+
+}
+.fsection-leftdiv,.fsection-rightdiv{
+    width: 550px;
+    height: 420px;
+}
+
+.fsection-rightdiv{
+    /* border: 2px solid red; */
+    padding: 30px 30px;
+     background:transparent;
+    
+    
+}
+.fsection-rightdiv p{
+    margin: 10px ;
+    word-spacing: 5px;
+    color:white;
+    
+}
+.fsection-rightdiv h2{
+    font-size: 50px;
+    font-weight: 10;
+   
+}
+.fsection-leftdiv{
+    /* border: 2px solid blue; */
+    background-image: url("images/main3.png"); 
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+.psection{
+    display: flex;
+    justify-content: center;
+   /*  border: 2px solid black; */
+    padding: 45px 0;
     background: #873985;
- border: none; 
-    color: white;
-    font-size: 15px;
-
-    text-decoration: none;
-
-    border-radius: 14px 14px 14px 14px !important; 
+    background-size: cover;
+    width: 98.7%;
+    height: 550px;
 
 }
-.btn-surplus{
-    /*border: black 1px solid;*/
-    display: inline-block;          /* Allows the element to accept custom sizing/padding */
-    padding: 10px 22px;
+
+/*.psection-leftdiv,.psection-rightdiv{
+    width: 550px;
+    height: 420px;
+}*/
+
+.psection-leftdiv{
+     /*border: 2px solid red; */
+    padding: 30px 30px;
+     background:transparent;
+     color: white;
+     width: 640px;
+     height: 400px;
+    
+    
+}
+.psection-leftdiv p{
+    margin: 10px ;
+    word-spacing: 5px;
+    color:white;
+    
+}
+.psection-leftdiv h2{
+    font-size: 50px;
+    font-weight: 10;
+   
+}
+.psection-rightdiv{
+    /* border: 2px solid blue; */
+    background-image: url("images/main4.png"); 
+    background-size: cover;
+    height: 345px;
+    width: 450px;
+
 }
 
 
+ 
 
 
 
@@ -410,54 +387,76 @@ h1 {
 
 
 
-.fifthsection{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ .ssection{
     display: flex;
     justify-content: center;
    /*  border: 2px solid black; */
     padding: 45px 0;
     background: black;
     background-size: cover;
-    width: 98.7%;
+    width: 100%;
+    /*height: auto;*/
     border-radius: 70px 70px 0 0;
-    margin-top: 125px;
     
-
+    
+margin: -50px auto 0 auto !important;
+    position: relative !important;
+    z-index: 5 !important; 
 }
 
 
 
-.fifthsection-firstdiv{
-    /* border: 2px solid red; */
+.ssection-firstdiv{
+     /*border: 2px solid red; */
     padding: 25px 80px;
+    width: 150px;
      /*background-image: linear-gradient(white, white);*/
-     
-    
     
 }
 
 
 
 
-.fifthsection-leftdiv,.fifthsection-rightdiv{
+/*.ssection-leftdiv,.ssection-rightdiv{
     width: 500px;
     height: 310px;
 }
+*/
 
-.fifthsection-leftdiv{
-    /* border: 2px solid red; */
+
+
+
+.ssection-leftdiv{
+     /*border: 2px solid red; */
     padding: 25px 80px;
+    width: 430px;
+    
      /*background-image: linear-gradient(white, white);*/
     
     
 }
-.fifthsection-leftdiv p{
+.ssection-leftdiv p{
     margin: 10px ;
     word-spacing: 5px;
     color:#ffffff;
     
 }
 
-.fifthsection-leftdiv h1{
+.ssection-leftdiv h1{
     color: white;
 }
 
@@ -465,22 +464,22 @@ h1 {
 
 
 
-.fifthsection-middlediv{
-    /* border: 2px solid red; */
+.ssection-middlediv{
+    /*border: 2px solid red; */
     padding: 25px 80px;
+    width: 36Zt0px;
      /*background-image: linear-gradient(white, white);*/
-    
-    
 }
-.fifthsection-middlediv li{
+
+.ssection-middlediv li{
     margin: 10px ;
-    word-spacing: 10px;
+    word-spacing: 2px;
     color:#ffffff;
     
 
 }
 
-.fifthsection-middlediv h1{
+.ssection-middlediv h1{
     color: white;
 }
 
@@ -490,21 +489,21 @@ h1 {
 
 
 
-.fifthsection-rightdiv{
-   /*  border: 2px solid red; */
+.ssection-rightdiv{
+    /*border: 2px solid red; */
     padding: 25px 80px;
      /*background-image: linear-gradient(white, white);*/
     
     
 }
-.fifthsection-rightdiv p{
+.ssection-rightdiv p{
     margin: 10px ;
     word-spacing: 5px;
     color:#ffffff;
     
 }
 
-.fifthsection-rightdiv h1{
+.ssection-rightdiv h1{
     color: white;
 }
 
